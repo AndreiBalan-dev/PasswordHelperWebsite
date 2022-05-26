@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato|Roboto:400,900'  rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <a href='/parola/ro/' class="btn">
+  <svg width="110" height="62" id="button_start">
+    <defs>
+        <linearGradient id="grad1">
+            <stop offset="0%" stop-color="#FF8282"/>
+            <stop offset="100%" stop-color="#E178ED" />
+        </linearGradient>
+    </defs>
+     <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="100" height="50"></rect>
+  </svg>
+
+    <span class="unselectable span1">ro</span>
+</a>
+<a href='/parola/en/' class="btn">
+  <svg width="110" height="62" id="button_start">
+    <defs>
+        <linearGradient id="grad2">
+            <stop offset="0%" stop-color="#E178ED"/>
+            <stop offset="100%" stop-color="#FF8282" />
+        </linearGradient>
+    </defs>
+     <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad2)" width="100" height="50"></rect>
+  </svg>
+
+    <span class="unselectable span2">en</span>
+</a>
+</div>
+<div class="containerText">
+    <a class="intro">
+    <span class="unselectable" id="typewrite">Press next and learn about your passwords.</span>
+</a>
+</div>
+<div>
+<svg class="svg_logo" viewBox="0 0 960 300">
+    <symbol id="s-text">
+      <text text-anchor="middle" x="50%" y="80%" class="unselectable">PWDH. </text>
+      <text text-anchor="middle" x="50%" y="80%" class="unselectable">PWDH. </text>
+      
+    </symbol>
+  
+    <g class = "g-ants">
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+    </g>
+  </svg>
+</div>
+<script type="module" src="jscript.js">
+</script>
+</body>
+</html>

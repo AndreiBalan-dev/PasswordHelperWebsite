@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Breaches</title>
+</head>
+<body class="home-container">
+  <div>
+    <link href="./home.css" rel="stylesheet" />
+    <div>
+      <h1 class="home-text unselectable"><span>breșa de securitate</span></h1>
+      <a class="home-text2_button" id="detalii">•</a>
+      <a href='#section1_scroll'class="home-text2" id="detalii">Afla mai multe detalii</a>
+      <span class="home-text3">• Afla daca parola mea este buna</span>
+      <span class="home-text4">• Genereaza-mi o parola noua</span>
+      <h2 class="home-text5">Si de ce este important sa te protejezi</h2>
+    </div>
+</div>
+<div class="section1" id="section1_scroll">
+  <a hidden> scroll fix </a>
+</div>
+<div class="section1" id="section1">
+  <h2 class="home-text6">Ce defineste o parola sigura?</h2>
+  <div class="hidden" id="hidden_1">
+  <p>- O parola buna este o parola cu multe caractere, fara cuvinte din dictionarul oricarei limbi, si care include toate tipurile de caractere viabile.</p>
+  <a>- De asemenea, pentru ca parola ta sa fie sigura, trebuie sa ai grija unde o introduci, cum o salvezi si ce programe instalezi pe dispozitivul dumneavoastra.</a>
+  <p>- Programul "PasswordHelper" te va ajuta sa o parola sigura, si iti va spune daca parola ta curenta este sigura sau nu.</p>
+  </div>
+</div>
+<div class="section2" id="section2">
+  <h2 class="home-text7">De ce ar trebui sa avem o parola sigura?</h2>
+  <div class="hidden" id="hidden_2">
+  <p>- Avand o parola slaba, contul tau (indiferent de ce tip) devine automat mai vulnerabil, iar depinzand de cat de slaba este parola, acesta poate fi spart.</p>
+  <a>- Un factor de risc sunt bresele de securitate. Aceasta se intampla cand cineva reuseste sa intre intr-o baza de date cu informatii despre tine, incluzand si parola, emailul, etc. Avand 2-Factor Authentification pe websiteurile de incredere este necesar pentru o protectie mult mai buna.</a>
+  <p>- Pe majoritatea websiteurilor, parolele tale sunt encriptate, mai apoi adaugate in baza de date. Desi ele sunt encriptate, acestea nu sunt greu de spart daca parola ta este slaba. Hackerii folosesc metoda Brute-Force Hash Decryption ce trece automat printr-o lista de parole sau ia fiecare caracter in parte, il encripteaza in setul de functii hash criptografice respective, si daca parola ta encriptata este exact la fel cu parola pe care el a reusit sa o encripteze, atunci ti-a aflat parola si se poate conecta pe contul dumneavoastra.</p>
+  </div>
+</div>
+<div class="section3" id="section3">
+  <h2 class="home-text7">Cum sunt encriptate parolele intr-o baza de date?</h2>
+  <div class="hidden" id="hidden_3">
+  <p>- Procesul de encriptare a parolelor este unul complex, ce face ghicirea unui cuvant text dupa textul encriptat imposibil. </a>
+  <p>- Textul simplu trece prin multi algoritmi matematicii ce creeaza un text encriptat, necitibil.</p>
+  <p>- In poza de mai jos aveti 2 exemple cu o baza de date. Sus aveti un exemplu de o baza de date ce nu iti encripteaza parola, ceea ce este foarte periculos si ii poate oferii acces celui ce obtine baza de date la parola ta. Mai jos avem o baza de date in care parola este encriptata in SHA256. Se poate observa cum textul simplu "john856" a devenit un text lung, encriptat si necitibil.</p>
+  <img src="encrypt_password.png" alt="Encriptarea parolelor in baza de date">
+  <p> Incearca si tu sa encriptezi un text in SHA256. Scrie ceva in casuta "Mesaj" si o sa primesti un output cu textul encriptat.</p>
+  <ul>
+    <li>
+      <label for="message">Mesaj</label>
+      <textarea name="message" id="message" class="width-full"></textarea>
+    </li>
+    <li>
+      <label for="digest">Hash</label>
+      <input type="text" name="digest" id="digest" readonly="" class="width-full"> 
+      <output class="small grey" id="time">average 0.100ms response time</output>
+    </li>
+  </ul>
+  </div>
+</div>
+
+<button class="button button1" id="section1_press">More</button>
+<button class="button button2" id="section2_press">More</button>
+<button class="button button3" id="section3_press">More</button>
+
+<script type="module" src="jscript.js">
+</script>
+</body>
+</html>
+  

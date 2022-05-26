@@ -1,0 +1,125 @@
+.home-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    justify-content: center;
+    margin:0;
+    background: url('https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDJ8fGhhY2t8ZW58MHx8fHwxNjUzMzA3OTM5&ixlib=rb-1.2.1&q=80&raw_url=true&w=1500') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+  .home-text {
+    top: 100px;
+    left: 284px;
+    color: #ffffff;
+    width: 800px;
+    height: 83px;
+    margin: auto;
+    position: absolute;
+    font-size: 5em;
+    align-self: center;
+    font-style: normal;
+    font-family: Source Sans Pro;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .home-text2 {
+    top: 320px;
+    left: 135px;
+    color: #ffffff;
+    position: absolute;
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .home-text3 {
+    top: 360px;
+    left: 134px;
+    color: #ffffff;
+    position: absolute;
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .home-text4 {
+    top: 400px;
+    left: 134px;
+    color: #ffffff;
+    position: absolute;
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .home-text5 {
+    top: 150px;
+    left: 290px;
+    color: #ffffff;
+    width: 1000px;
+    height: 39px;
+    position: absolute;
+    font-size: 3em;
+    align-self: center;
+    font-style: normal;
+    font-family: Source Sans Pro;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .home-text6 {
+    top: -100px;
+    left: 0px;
+    color: #ffffff;
+    width: 1000px;
+    height: 39px;
+    position: absolute;
+    font-size: 3em;
+    align-self: center;
+    font-style: normal;
+    font-family: Source Sans Pro;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .home-text7 {
+    top: -100px;
+    left: 290px;
+    color: #ffffff;
+    width: 1000px;
+    height: 39px;
+    position: absolute;
+    font-size: 2em;
+    align-self: center;
+    font-style: normal;
+    font-family: Source Sans Pro;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .unselectable {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+   html {
+     scroll-behavior: smooth;
+   }
+   
+   #section1 {
+     height: 600px;
+     position:absolute;
+     top:800px;
+     left:170px;
+   }
+   
+   #section2 {
+     height: 600px;
+   }
