@@ -29,25 +29,35 @@ body{
   }
   .container{
     height:10%;
-   position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin:0;
   }
 
   .containerText{
     height:0%;
-   position: absolute;
+   position: relative;
       top: 45%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      width: 900px;
+      margin:auto;
+      text-align: center;
+      align-self: center;
+      display: grid;
+      place-content: center;
+      place-items: center;
   }
 
+
   .intro{
-      position:relative;
+      position:absolute;
       top:-20px;
       font:1.5em 'Nunito', sans-serif;
       color: white;
+      display: grid;
+      place-content: center;
+      place-items: center;
   }
 
   .btn {
@@ -68,12 +78,16 @@ body{
       font-weight:900;
       font-size:17px;
       letter-spacing: 0.045em;
+      place-content: center;
+      place-items: center;
   }
   
   .btn svg {
       position: absolute;
       top: 0px;
       left: 0px;
+      place-content: center;
+      place-items: center;
 
   }
   
@@ -83,6 +97,17 @@ body{
       stroke-dashoffset: 0;
       -webkit-transition: all 1200ms ease;
       transition: all 1200ms ease;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .btn svg {
+      align-content: center;
+      text-align: center;
+      align-self: center;
+      display: grid;
+      place-content: center;
+      place-items: center;
+    }
   }
   
   .span1{

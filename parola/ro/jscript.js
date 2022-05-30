@@ -6,6 +6,9 @@ let section3_press = document.getElementById("section3_press");
 let section1 = document.getElementById("hidden_1");
 let section2 = document.getElementById("hidden_2");
 let section3 = document.getElementById("hidden_3");
+let textbutton = document.getElementById("textbutton");
+let githubtext = document.getElementById("githubText");
+
 
 //Later
 
@@ -85,7 +88,15 @@ function hide(x) {
   }
 }
 
+textbutton.addEventListener('click', () => {
+  clickCopy();
+})
 
+function clickCopy() {
+  githubtext.select();
+  githubtext.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(githubtext.value);
+}
 
 function test(str) {
   alert(str)

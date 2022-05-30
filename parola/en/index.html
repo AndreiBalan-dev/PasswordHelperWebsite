@@ -9,22 +9,85 @@
 <body class="home-container">
   <div>
     <link href="./home.css" rel="stylesheet" />
-    <div>
-      <h1 class="home-text unselectable"><span>breșa de securitate</span></h1>
-      <a href='#section1'class="home-text2" id="detalii">• Afla mai multe detalii</a>
-      <span class="home-text3">• Afla daca parola mea este buna</span>
-      <span class="home-text4">• Genereaza-mi o parola noua</span>
-      <h2 class="home-text5">Si de ce este important sa te protejezi</h2>
+    <div class="sectionintro">
+      <h1 class="home-text unselectable"><span>Data Breach</span></h1>
+      <h2 class="home-text5">And why it is important to protect yourself.</h2>
+      <a class="home-text2_button">•</a>
+      <a href='#section1_scroll' class="home-text2">Find out more details</a>
+      <a class="home-text3_button">•</a>
+      <a href="#github" class="home-text3">Find out if my password is good</a>
+      <a class="home-text4_button">•</a>
+      <a href="#github" class="home-text4">Generate me a new password</a>
     </div>
 </div>
+<div class="section1" id="section1_scroll">
+  <a hidden> scroll fix </a>
+</div>
+<div class="section1" id="section1">
+  <h2 class="home-text6">What defines a safe password?</h2>
+  <div class="hidden" id="hidden_1">
+  <p>- A safe password is a password with many characters, without dictionary words, and which includes all type of characters.</p>
+  <p>- In addition, for your password to be safe, you must be precautious on where you insert it, how do you save it and what the applications you install on your device.</p>
+  <a>- The application "PasswordHelper" will help you choose a safe password, and it will tell you if your current password is good or not.</a>
+  </div>
+</div>
+<div class="section2" id="section2">
+  <h2 class="home-text7">Why is it important to use a safe password?</h2>
+  <div class="hidden" id="hidden_2">
+  <p>- By having a weak password, your account will automatically become more vulnerable, and if your password is too weak, it can be compromised.</p>
+  <p>- A risk factor are Data Breaches. Those happen when someone manages to break into a data base full with information about your account, including your password, your email, etc. Having 2-Factor Authentification on trusted websites is required for a much better protection.</p>
+  <a>- On the majority of the websites, your password/s are before encrypted, then added to the database. Even if they are encrypted, they're not hard to decrypt if your password is weak. Hackers use the Brute-Force Hash Decryption method which automatically goes through a list of passwords or takes every character from ASCII, encrypts it in the chosen set of cryptographic hash functions, and if your encrypted password matches the password the hacker just encrypted, then he found your password and your account is compromised.</a>
+  </div>
+</div>
+<div class="section3" id="section3">
+  <h2 class="home-text7">How are the passwords encrypted in a database?</h2>
+  <div class="hidden" id="hidden_3">
+  <p>- The process of encryption of passwords is complex, which makes the prediction of a plain text just by having the encrypted hash impossible. </a>
+  <p>- The plain text goes through multiple mathematic algorithms which create an encrypted, unreadable hash.</a>
+  <p>- Looking at the photo below, you have 2 examples of a data base. Above is an example of a data base which does not encrypt your password, which puts your password at great risk if anyone, even the owner of the website, sees your password, especially if you use it on multiple websites. Below, we have a database that encrypts your password in SHA256. You can see how the plain text "john856" became a long, unreadable and encrypted hash.</p>
+  <img src="encrypt_password.png" alt="Encriptarea parolelor in baza de date">
+  <p> Try it yourself! Encrypt a message in SHA256. Write something in the "Message" text area, and you will receive an output with the encrypted message.</p>
+  <ul>
+    <li>
+      <label for="message">Message</label>
+      <textarea name="message" id="message" class="width-full"></textarea>
+    </li>
+    <li>
+      <label for="digest">Hash</label>
+      <input type="text" name="digest" id="digest" readonly="" class="width-full"> 
+      <output class="small grey" id="time">average 0.100ms response time</output>
+    </li>
+  </ul>
+  </div>
 
-<div id="section1">
-  <h2 class="home-text6">Section 1</h2>
-  <p>Click on the link to see the "smooth" scrolling effect.</p>
-  <a>Click Me to Smooth Scroll to Section 2 Below</a>
-  <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
+<div class="section4" id="section4">
+  <div class="quiztext">
+    <span>Take a quiz and verify what you've learned!</span>
+  </div>
+  <a id="quizbutton" href="quiz">Take a quiz</a>
 </div>
 
+
+  
+<div class="github" id="github">
+  <div>
+    <a class="small">For more functionalities</a>
+  </div>
+  <div>
+    <a>Download the application <b>PasswordHelper</b>:</a>
+  </div>
+    <textarea name="message" id="githubText" readonly="" value=1>https://github.com/AndreiBalan-dev/PasswordHelper</textarea>
+    <button id="textbutton">Copy</button>
+</div>
+</div>
+
+
+<button class="button button1" id="section1_press">More</button>
+<button class="button button2" id="section2_press">More</button>
+<button class="button button3" id="section3_press">More</button>
+
+<script type="module" src="jscript.js">
+</script>
 </body>
 </html>
   
