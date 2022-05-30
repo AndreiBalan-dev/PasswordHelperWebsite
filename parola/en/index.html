@@ -36,15 +36,18 @@
   <div class="hidden" id="hidden_2">
   <p>- By having a weak password, your account will automatically become more vulnerable, and if your password is too weak, it can be compromised.</p>
   <p>- A risk factor are Data Breaches. Those happen when someone manages to break into a data base full with information about your account, including your password, your email, etc. Having 2-Factor Authentification on trusted websites is required for a much better protection.</p>
+  <p>- Even if 2-Factor Authentification is important and seems impossible to bypass, people have actually bypassed this multiple times in the past, and you will be amazed to know that it was not very hard to bypass. All you had to do is to change your IP to the victim's location and play with the APIs a bit.</p>
+  <p>- Of course, even if the hacker bypassed the 2-Factor Authentification, they still needed the victim's password, which takes us back to why is important to have a strong password.</p>
   <a>- On the majority of the websites, your password/s are before encrypted, then added to the database. Even if they are encrypted, they're not hard to decrypt if your password is weak. Hackers use the Brute-Force Hash Decryption method which automatically goes through a list of passwords or takes every character from ASCII, encrypts it in the chosen set of cryptographic hash functions, and if your encrypted password matches the password the hacker just encrypted, then he found your password and your account is compromised.</a>
-  </div>
+  <p>- For protection against Hash Brute Forcing decryption, developers use HMAC (Hash-based Message Authentication Code) which gives the user and the server a unique, specific key, different from other keys. The popular communication application WhatsApp uses a combination between SHA256 and HMAC, the combination being called AES-256 and it is uncrackable.</p>  
+</div>
 </div>
 <div class="section3" id="section3">
   <h2 class="home-text7">How are the passwords encrypted in a database?</h2>
   <div class="hidden" id="hidden_3">
   <p>- The process of encryption of passwords is complex, which makes the prediction of a plain text just by having the encrypted hash impossible. </a>
   <p>- The plain text goes through multiple mathematic algorithms which create an encrypted, unreadable hash.</a>
-  <p>- Looking at the photo below, you have 2 examples of a data base. Above is an example of a data base which does not encrypt your password, which puts your password at great risk if anyone, even the owner of the website, sees your password, especially if you use it on multiple websites. Below, we have a database that encrypts your password in SHA256. You can see how the plain text "john856" became a long, unreadable and encrypted hash.</p>
+  <p>- Looking at the photo below, you have 2 examples of a data base. Above is an example of a data base which does not encrypt your password, which puts your password at great risk if anyone, even the owner of the website, sees your password, especially if you use it on multiple websites. Below, we have a database that encrypts your password in MD5. You can see how the plain text "john856" became a long, unreadable and encrypted hash.</p>
   <img src="encrypt_password.png" alt="Encriptarea parolelor in baza de date">
   <p> Try it yourself! Encrypt a message in SHA256. Write something in the "Message" text area, and you will receive an output with the encrypted message.</p>
   <ul>
@@ -82,9 +85,9 @@
 </div>
 
 
-<button class="button button1" id="section1_press">More</button>
-<button class="button button2" id="section2_press">More</button>
-<button class="button button3" id="section3_press">More</button>
+<button class="button button1" id="section1_press">Less</button>
+<button class="button button2" id="section2_press">Less</button>
+<button class="button button3" id="section3_press">Less</button>
 
 <script type="module" src="jscript.js">
 </script>

@@ -318,7 +318,7 @@
    #section3 {
     height: 20px;
     position:absolute;
-    top:1500px;
+    top:1730px;
     left:170px;
   }
 
@@ -352,12 +352,12 @@
   }
   .button3 {
     position:absolute;
-    top:1384px;
+    top:1614px;
     left:80px;
     border-radius: 50%;
   }
   .hidden {
-    display: none;
+    display: block;
   }
 
   #github {

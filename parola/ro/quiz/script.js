@@ -1,50 +1,50 @@
 const quizData = [
     {
         question:"Ce defineste o parola sigura?",
-        a:"O parola cu multe caractere",
-        b:"O parola cu multe tipuri de caractere",
-        c:"O parola fara cuvinte din dictionar",
-        d:"Toate cele de mai sus",
+        a:"a) O parola cu multe caractere",
+        b:"b) O parola cu multe tipuri de caractere",
+        c:"c) O parola fara cuvinte din dictionar",
+        d:"d) Toate cele de mai sus",
         correct:"d"
     },
     {
         question:"De ce este important sa avem o parola sigura?",
-        a:"Pentru a evita decriptarea sau spargerea contului nostru",
-        b:"Pentru o incriptie mai buna SHA256",
-        c:"Pentru ca este greu de memorat la prima vedere",
-        d:"Nu este important daca am 2-Factor Authentification",
+        a:"a) Pentru a evita decriptarea sau spargerea contului nostru",
+        b:"b) Pentru o incriptie mai buna SHA256",
+        c:"c) Pentru ca este greu de memorat la prima vedere",
+        d:"d) Nu este important daca am 2-Factor Authentification",
         correct:"a"
     },
     {
         question:"Ce reprezinta un factor de risc pentru spargerea contului tau?",
-        a:"Bresele de securitate",
-        b:"Introducerea parolei pe un website periculos",
-        c:"Instalarea si executarea unui virus tip keylogger",
-        d:"Toate cele de mai sus",
+        a:"a) Bresele de securitate",
+        b:"b) Introducerea parolei pe un website periculos",
+        c:"c) Instalarea si executarea unui virus tip keylogger",
+        d:"d) Toate cele de mai sus",
         correct:"d"
     },
     {
         question:"Numiti un set de functii hash criptografice pe care websiteurile il folosesc",
-        a:"ENC24",
-        b:"SHA256",
-        c:"MB4",
-        d:"BM64",
+        a:"a) ENC24",
+        b:"b) SHA256",
+        c:"c) MB4",
+        d:"d) BM64",
         correct:"b"
     },
     {
-        question:"Mai numiti inca un set de acest tip.",
-        a:"MD5",
-        b:"ARK64",
-        c:"HMPAC",
-        d:"RT256",
+        question:"Mai numiti inca un set de functii hash criptografice pe care websiteurile il folosesc.",
+        a:"a) MD5",
+        b:"b) ARK64",
+        c:"c) HMPAC",
+        d:"d) RT256",
         correct:"a"
     },
     {
         question:"Ce vulnerabilitate importanta este corectata de HMAC? (Hash-based message authentication code)",
-        a:"Infiltrarea bazelor de date prin codul sursa",
-        b:"Usurinta citirii algoritmului si ghicirea parolei prin hash-ul encriptat.",
-        c:"Verificarea si concatenarea a doua rezultate hash pentru aflarea si decriptarea parolei",
-        d:"Toate cele de mai sus",
+        a:"a) Infiltrarea bazelor de date prin codul sursa",
+        b:"b) Usurinta citirii algoritmului si ghicirea parolei prin hash-ul encriptat.",
+        c:"c) Verificarea si concatenarea a doua rezultate hash pentru aflarea si decriptarea parolei",
+        d:"d) Toate cele de mai sus",
         correct:"c"
     }
 ];

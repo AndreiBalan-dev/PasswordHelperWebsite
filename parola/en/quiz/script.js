@@ -1,50 +1,50 @@
 const quizData = [
     {
         question:"What defines a strong password?",
-        a:"A password with many characters",
-        b:"A password with many types of characters",
-        c:"A password without dictionary words",
-        d:"All of the above",
+        a:"a) A password with many characters",
+        b:"b) A password with many types of characters",
+        c:"c) A password without dictionary words",
+        d:"d) All of the above",
         correct:"d"
     },
     {
         question:"Why having a strong password is important?",
-        a:"To avoid decryption or getting our account compromised",
-        b:"For a better SHA256 encryption",
-        c:"Because it is hard to remember after seeing it",
-        d:"It is not important if I have 2-Factor Authentification",
+        a:"a) To avoid decryption or getting our account compromised",
+        b:"b) For a better SHA256 encryption",
+        c:"c) Because it is hard to remember after seeing it",
+        d:"d) It is not important if I have 2-Factor Authentification",
         correct:"a"
     },
     {
         question:"What represents a risk factor for getting your account compromised?",
-        a:"Data Breaches",
-        b:"Inserting my password on a dangerous website",
-        c:"The installation and execution of a keylogger",
-        d:"All of the above",
+        a:"a) Data Breaches",
+        b:"b) Inserting my password on a dangerous website",
+        c:"c) The installation and execution of a keylogger",
+        d:"d) All of the above",
         correct:"d"
     },
     {
         question:"Name a set of cryptographic hash functions that websites use.",
-        a:"ENC24",
-        b:"SHA256",
-        c:"MB4",
-        d:"BM64",
+        a:"a) ENC24",
+        b:"b) SHA256",
+        c:"c) MB4",
+        d:"d) BM64",
         correct:"b"
     },
     {
-        question:"Name another set of this type.",
-        a:"MD5",
-        b:"ARK64",
-        c:"HMPAC",
-        d:"RT256",
+        question:"Name another set of cryptographic hash functions that websites use",
+        a:"a) MD5",
+        b:"b) ARK64",
+        c:"c) HMPAC",
+        d:"d) RT256",
         correct:"a"
     },
     {
         question:"What a significant vulnerability is corrected by HMAC? (Hash-based message authentication code)",
-        a:"Infiltrating databases through source code",
-        b:"Ease of reading the algorithm and guessing the password through the encrypted hash",
-        c:"Checking and concatenating two hash results to find and decrypt the password",
-        d:"All of the above",
+        a:"a) Infiltrating databases through source code",
+        b:"b) Ease of reading the algorithm and guessing the password through the encrypted hash",
+        c:"c) Checking and concatenating two hash results to find and decrypt the password",
+        d:"d) All of the above",
         correct:"c"
     }
 ];

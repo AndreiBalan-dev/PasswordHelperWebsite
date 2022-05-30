@@ -26,27 +26,30 @@
 <div class="section1" id="section1">
   <h2 class="home-text6">Ce defineste o parola sigura?</h2>
   <div class="hidden" id="hidden_1">
-  <p>- O parola buna este o parola cu multe caractere, fara cuvinte din dictionarul oricarei limbi, si care include toate tipurile de caractere viabile.</p>
-  <a>- De asemenea, pentru ca parola ta sa fie sigura, trebuie sa ai grija unde o introduci, cum o salvezi si ce programe instalezi pe dispozitivul dumneavoastra.</a>
-  <p>- Programul "PasswordHelper" te va ajuta sa o parola sigura, si iti va spune daca parola ta curenta este sigura sau nu.</p>
+  <p>- O parola buna este o parola cu multe caractere, fara cuvinte din dictionar indiferent de limba acestuia, si care include toate tipurile de caractere viabile.</p>
+  <a>- De asemenea, pentru ca parola ta sa fie sigura, trebuie sa ai grija unde o introduci, cum o salvezi si ce programe instalati si rulati pe dispozitivul dumneavoastra.</a>
+  <p>- Programul "PasswordHelper" te va ajuta sa o creezi parola sigura, si iti va spune daca parola ta actuala este sigura sau nu.</p>
   </div>
 </div>
 <div class="section2" id="section2">
-  <h2 class="home-text7">De ce ar trebui sa avem o parola sigura?</h2>
+  <h2 class="home-text7">De ce este important sa avem o parola sigura?</h2>
   <div class="hidden" id="hidden_2">
-  <p>- Avand o parola slaba, contul tau (indiferent de ce tip) devine automat mai vulnerabil, iar depinzand de cat de slaba este parola, acesta poate fi spart.</p>
-  <a>- Un factor de risc sunt bresele de securitate. Aceasta se intampla cand cineva reuseste sa intre intr-o baza de date cu informatii despre tine, incluzand si parola, emailul, etc. Avand 2-Factor Authentification pe websiteurile de incredere este necesar pentru o protectie mult mai buna.</a>
-  <p>- Pe majoritatea websiteurilor, parolele tale sunt encriptate, mai apoi adaugate in baza de date. Desi ele sunt encriptate, acestea nu sunt greu de spart daca parola ta este slaba. Hackerii folosesc metoda Brute-Force Hash Decryption ce trece automat printr-o lista de parole sau ia fiecare caracter in parte, il encripteaza in setul de functii hash criptografice respective, si daca parola ta encriptata este exact la fel cu parola pe care el a reusit sa o encripteze, atunci ti-a aflat parola si se poate conecta pe contul dumneavoastra.</p>
+  <p>- Avand o parola slaba, contul tau devine automat mai vulnerabil, iar, in functie de cat de slaba este parola, contul poate fi compromis.</p>
+  <a>- Un factor de risc sunt bresele de securitate. O bresa de securitate se intampla cand cineva reuseste sa intre intr-o baza de date ce include informatii despre tine, precum nume, parola, email, etc. Avand 2-Factor Authentification pe websiteurile de incredere este necesar pentru o protectie mult mai buna.</a>
+  <p>- Chiar daca autentificatorul 2-Factor este important, si pare imposibil de trecut peste el, oamenii au reusit sa treaca peste el de mai multe ori in trecut, si o sa ramai surprins sa aflii ca nu a fost asa de greu. Tot ce trebuiau sa faca este sa isi schimbe IPul in locatia in care se afla contul victimei, si sa se joace un pic cu API-urile.</p>
+  <p>- Desigur, chiar daca hackerul a reusit sa treaca de autentificatorul 2-Factor, acesta inca are nevoie de parola victimei. Asta ne readuce la unul dintre raspunsurile intrebarii: de ce este important sa avem o parola sigura?</p>
+  <p>- Pe majoritatea websiteurilor, parolele tale sunt incriptate, mai apoi adaugate in baza de date. Desi ele sunt incriptate, acestea nu sunt greu de spart daca parola ta este slaba. Hackerii folosesc metoda Brute-Force Hash Decryption ce trece automat printr-o lista de parole sau prin fiecare caracter din ASCII in parte, il incripteaza in setul de functii hash criptografic respectiv, si daca parola ta incriptata este exact la fel cu parola pe care el a obtinut-o, atunci ti-a aflat parola si se poate conecta pe contul dumneavoastra.</p>
+  <p>- Pentru apararea impotriva verificarii si concatenarii a doua rezultate hash intre parola ta si textul incriptat de hacker, prin metoda "Brute Force" (Brute-Force Hash Decryption), dezvoltatorii folosesc HMAC (Hash-based Message Authentication Code) ce ofera utilizatorului si serverului folosit de utilizator o cheie privata specifica si unica, diferita de alte chei. Aplicatia populara de comunicatii "WhatsApp" foloseste o combinatie intre SHA256 si HMAC, aceasta combinatie se numeste AES-256 si este de nedecriptat.</p>
   </div>
 </div>
 <div class="section3" id="section3">
-  <h2 class="home-text7">Cum sunt encriptate parolele intr-o baza de date?</h2>
+  <h2 class="home-text7">Cum sunt incriptate parolele intr-o baza de date?</h2>
   <div class="hidden" id="hidden_3">
-  <p>- Procesul de encriptare a parolelor este unul complex, ce face ghicirea unui cuvant text dupa textul encriptat imposibil. </a>
-  <p>- Textul simplu trece prin multi algoritmi matematicii ce creeaza un text encriptat, necitibil.</p>
-  <p>- In poza de mai jos aveti 2 exemple cu o baza de date. Sus aveti un exemplu de o baza de date ce nu iti encripteaza parola, ceea ce este foarte periculos si ii poate oferii acces celui ce obtine baza de date la parola ta. Mai jos avem o baza de date in care parola este encriptata in SHA256. Se poate observa cum textul simplu "john856" a devenit un text lung, encriptat si necitibil.</p>
+  <p>- Procesul de incriptare a parolelor este unul complex, ce face ghicirea unui mesaj tip text dupa textul incriptat imposibila. </a>
+  <p>- Mesajul tip text simplu trece prin multi algoritmi matematicii si creeaza un text incriptat, necitibil.</p>
+  <p>- In poza de mai jos aveti 2 exemple cu o baza de date. Sus aveti un exemplu cu o baza de date ce nu incripteaza parolele la adaugare, ceea ce este foarte periculos si iti pune parola in pericol. Mai jos avem o baza de date in care parola este incriptata in MD5. Se poate observa cum textul simplu "john856" a devenit un text lung, incriptat si necitibil.</p>
   <img src="encrypt_password.png" alt="Encriptarea parolelor in baza de date">
-  <p> Incearca si tu sa encriptezi un text in SHA256. Scrie ceva in casuta "Mesaj" si o sa primesti un output cu textul encriptat.</p>
+  <p> Incearca si tu sa incriptezi un text in SHA256. Scrie ceva in casuta "Mesaj" si o sa primesti un output cu textul incriptat.</p>
   <ul>
     <li>
       <label for="message">Mesaj</label>
@@ -82,9 +85,9 @@
 </div>
 
 
-<button class="button button1" id="section1_press">More</button>
-<button class="button button2" id="section2_press">More</button>
-<button class="button button3" id="section3_press">More</button>
+<button class="button button1" id="section1_press">Less</button>
+<button class="button button2" id="section2_press">Less</button>
+<button class="button button3" id="section3_press">Less</button>
 
 <script type="module" src="jscript.js">
 </script>

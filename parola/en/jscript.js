@@ -36,13 +36,17 @@ let k = 0;
 let i = 0;
 let j = 0;
 
+section1.style.display = "block";
+section2.style.display = "block";
+section3.style.display = "block";
+
 section1_press.addEventListener('click', () => {
   hide(section1);
   if(k == 0) {
-    section1_press.innerText = "Less";
+    section1_press.innerText = "More";
     k++;
   } else if(k == 1) {
-    section1_press.innerText = "More";
+    section1_press.innerText = "Less";
     k=0;
   }
 }); 
@@ -50,10 +54,10 @@ section1_press.addEventListener('click', () => {
 section2_press.addEventListener('click', () => {
   hide(section2);
   if(i == 0) {
-    section2_press.innerText = "Less";
+    section2_press.innerText = "More";
     i++;
   } else if(i == 1) {
-    section2_press.innerText = "More";
+    section2_press.innerText = "Less";
     i=0;
   }
 }); 
@@ -61,10 +65,10 @@ section2_press.addEventListener('click', () => {
 section3_press.addEventListener('click', () => {
   hide(section3);
   if(j == 0) {
-    section3_press.innerText = "Less";
+    section3_press.innerText = "More";
     j++;
   } else if(j == 1) {
-    section3_press.innerText = "More";
+    section3_press.innerText = "Less";
     j=0;
   }
 }); 
