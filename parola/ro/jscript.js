@@ -167,9 +167,9 @@ homeNavToInfoText.addEventListener('click', () => {
 function containerButtons(infoContainer, infoContainerBtn) {
   infoContainer.classList.toggle('hidden')
   if (infoContainer.classList.contains('hidden')) {
-    infoContainerBtn.innerText = "Show";
+    infoContainerBtn.innerText = "Arată";
   } else {
-    infoContainerBtn.innerText = "Hide";
+    infoContainerBtn.innerText = "Ascunde";
   }
 }
 
