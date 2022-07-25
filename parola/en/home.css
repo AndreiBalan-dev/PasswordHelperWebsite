@@ -7,6 +7,7 @@
   background-size: cover;
   overflow-x: hidden;
 }
+
 .menu {
   z-index: 1;
   padding: 0;
@@ -33,7 +34,7 @@ ul.horizontal h1 {
 }
 
 ul.horizontal li {
-    float: left;
+  float: left;
 }
 
 ul.horizontal li a {
@@ -52,7 +53,7 @@ ul.horizontal li a:hover:not(.active) {
 }
 
 ul.horizontal li a.active {
-  background-color:#04AA6D;
+  background-color: #04AA6D;
 }
 
 .home-intro {
@@ -71,9 +72,10 @@ ul.horizontal li a.active {
 }
 
 .home-intro h1 {
-  animation: 1s ease-out 0s 1 slideInFromLeft;  
+  animation: 1s ease-out 0s 1 slideInFromLeft;
   font-size: 60px;
 }
+
 .home-intro h2 {
   animation: 1s ease-out 0s 1 slideInFromRight;
   font-size: 40px;
@@ -89,14 +91,14 @@ ul.horizontal li a.active {
 }
 
 .home-left {
-  position:relative;
-  display:grid;
+  position: relative;
+  display: grid;
   color: white;
   width: 70%;
   grid-template-columns: auto;
   font-size: 150%;
-  padding:10px;
-  margin:5px;
+  padding: 10px;
+  margin: 5px;
 }
 
 .home-left-animation {
@@ -113,22 +115,22 @@ ul.horizontal li a.active {
   padding: 20px 0px;
 }
 
-.info a{
-  font-size: 60px;
+.info a {
+  font-size: 36px;
   font-weight: bold;
   color: white;
 }
 
-.info p{
+.info p {
   font-size: 30px;
   padding: 0 10px;
   margin: 10px 0;
   margin-top: 0px;
-  color:white;
+  color: white;
 }
 
-.info-container{
-  background-color:rgba(0, 0, 0, 0.2);
+.info-container {
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   background-clip: padding-box
 }
@@ -141,18 +143,18 @@ ul.horizontal li a.active {
   font-weight: 600;
   border: black;
   border-width: thin;
-  float:left;
-  margin-top:16px;
+  float: left;
+  margin-top: 9px;
   background-color: #04AA6D;
-  text-decoration:none;
-  width:auto;
-  height:40px;
+  text-decoration: none;
+  width: auto;
+  height: 24px;
   transition: 0.5s;
 }
 
 .info button:hover {
   padding-right: 20px;
-  padding-left: 20px;  
+  padding-left: 20px;
 }
 
 .info-container {
@@ -161,37 +163,40 @@ ul.horizontal li a.active {
 }
 
 .github {
-  display:inline-block;
-  position:relative;
+  display: inline-block;
+  position: relative;
   margin: 0 auto;
   padding: 0;
   justify-content: center;
   text-align: center;
-  animation: 1s ease-in 0s 1 opacityAnim;  
+  animation: 1s ease-in 0s 1 opacityAnim;
 }
 
-.github a{
+.github a {
   font-weight: bold;
   color: white;
   font-size: 60px
 }
+
 .github a b {
   background: -webkit-linear-gradient(rgb(173, 210, 71), rgb(210, 247, 3));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .github textarea {
   vertical-align: center;
   padding: 0px;
   white-space: pre;
-  text-align:center;
+  text-align: center;
   min-width: 392px;
   max-width: 100%;
-  resize:none;
+  resize: none;
   margin: 0;
   height: 18px;
 }
+
 .github button {
   outline: 0;
   border: none;
@@ -205,6 +210,7 @@ ul.horizontal li a.active {
   margin: -4px 10px;
   margin-top: 15px;
 }
+
 .github button:hover {
   background-color: #772ce8;
 }
@@ -230,6 +236,7 @@ ul.horizontal li a.active {
     transform: translateX(-100%);
     opacity: 0.2;
   }
+
   100% {
     transform: translateX(0);
   }
@@ -240,6 +247,7 @@ ul.horizontal li a.active {
     transform: translateX(100%);
     opacity: 0.2;
   }
+
   100% {
     transform: translateX(0);
   }
@@ -250,6 +258,7 @@ ul.horizontal li a.active {
     transform: translateY(20%);
     opacity: 0.2;
   }
+
   100% {
     transform: translateX(0);
   }
@@ -259,6 +268,7 @@ ul.horizontal li a.active {
   0% {
     width: 0%;
   }
+
   100% {
     width: 100%;
   }
@@ -268,38 +278,56 @@ ul.horizontal li a.active {
   0% {
     opacity: 0.2;
   }
+
   100% {
     opacity: 1;
   }
 }
 
 @keyframes wiggle {
-  0%, 7% {
+
+  0%,
+  7% {
     transform: rotateZ(0);
   }
+
   15% {
     transform: rotateZ(-2deg);
   }
+
   20% {
     transform: rotateZ(2deg);
   }
+
   25% {
     transform: rotateZ(-5deg);
   }
+
   30% {
     transform: rotateZ(2deg);
   }
+
   35% {
     transform: rotateZ(-1deg);
   }
-  40%, 100% {
+
+  40%,
+  100% {
     transform: rotateZ(0);
   }
 }
 
-.width-full     { width: 100%; }
-.small         { font-size: 80%; }
-.grey          { color: #999999; }
+.width-full {
+  width: 100%;
+}
+
+.small {
+  font-size: 80%;
+}
+
+.grey {
+  color: #999999;
+}
 
 .hidden {
   display: none;
@@ -316,7 +344,7 @@ ul.horizontal li a.active {
 }
 
 .white {
-  color:white;
+  color: white;
 }
 
 .passwordhelper {
@@ -328,11 +356,11 @@ ul.horizontal li a.active {
 
 .passwordhelper:hover {
   font-size: 120%;
-  transition:5s
+  transition: 5s
 }
 
 /* #### Mobile Phones Portrait #### */
-@media screen and (max-device-width: 480px) and (orientation: portrait){
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
   .home-intro {
     line-height: 1;
     width: 100%;
@@ -340,60 +368,122 @@ ul.horizontal li a.active {
 }
 
 /* #### Mobile Phones Landscape #### */
-@media screen and (max-device-width: 640px) and (orientation: landscape){
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
   .home-intro {
     line-height: 1;
-  }}
+  }
+}
 
 /* #### Mobile Phones Portrait or Landscape #### */
-@media screen and (max-device-width: 640px){
+@media screen and (max-device-width: 640px) {
   .home-intro {
     line-height: 0.8;
   }
-  .home-intro h1{
+
+  .home-intro h1 {
     font-size: 40px;
   }
-  .home-intro h2{
+
+  .home-intro h2 {
     font-size: 20px;
   }
+
   ul.horizontal {
     font-size: 12px;
   }
+
   ul.horizontal li a {
     font-size: 8;
   }
 }
 
 /* #### iPhone 4+ Portrait or Landscape #### */
-@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
   .home-intro {
     line-height: 0.8;
     width: auto;
   }
-  .home-intro h1{
+
+  .home-intro h1 {
     font-size: 40px;
   }
-  .home-intro h2{
+
+  .home-intro h2 {
     font-size: 20px;
   }
+
   ul.horizontal {
     width: auto;
     font-size: 12px;
   }
+
   ul.horizontal li a {
     font-size: 8;
+  }
+
+  .info a {
+    font-size: 24px;
+  }
+
+  .info p {
+    font-size: 18px;
+    padding: 0 10px;
+    margin: 10px 0;
+    margin-top: 0px;
+  }
+
+  .info button {
+    margin-top: 3px;
+    height: 24px;
+  }
+
+  .home-left {
+    width: auto;
+    font-size: 80%;
+    padding: 10px;
+    margin: 5px;
+  }
+
+
+  .home-left img {
+    max-width: 200px
+  }
+
+  .github a {
+    font-size: 20px
+  }
+
+  .github textarea {
+    padding: 0px;
+    white-space: pre;
+    min-height: 30px;
+    min-width: 30px;
+    max-width: 80px;
+    resize: none;
+    margin: 0;
+    height: 18px;
+  }
+
+  .center {
+    margin: auto;
+    width: auto;
+    padding: auto;
+  }
+
+  .github button {
+    display: block;
   }
 }
 
 /* #### iPhone 5 Portrait or Landscape #### */
-@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
   .home-intro {
     line-height: 1;
   }
 }
 
 /* #### iPhone 6 and 6 plus Portrait or Landscape #### */
-@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3){
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
   .home-intro {
     line-height: 1;
     width: 100%;
@@ -401,17 +491,16 @@ ul.horizontal li a.active {
 }
 
 /* #### Tablets Portrait or Landscape #### */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .home-intro {
     line-height: 1;
-    width:auto;
+    width: auto;
   }
+
   ul.horizontal {
-    width:auto;
+    width: auto;
   }
 }
 
 /* #### Desktops #### */
-@media screen and (min-width: 1024px){
-
-}
+@media screen and (min-width: 1024px) {}

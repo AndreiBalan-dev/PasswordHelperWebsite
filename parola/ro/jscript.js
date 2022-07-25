@@ -1,10 +1,12 @@
 //menu content
+let titleButton = document.getElementById('intro-title-button')
 let homeIntro = document.getElementById('home-intro')
 let homeButton = document.getElementById('home')
 let homeContent = document.getElementById('home-content')
 let infoIntro = document.getElementById('info-intro')
 let infoButton = document.getElementById('info')
 let infoContent = document.getElementById('info-content')
+let quizButton = document.getElementById('quiz-button')
 let githubIntro = document.getElementById('github-intro')
 let githubButton = document.getElementById('github')
 let githubContent = document.getElementById('github-content')
@@ -43,6 +45,10 @@ let githubtext = document.getElementById("githubText");
 
 let kHomeClick = 0;
 
+titleButton.addEventListener('click', () => {
+  window.location.href = '../..'
+})
+
 homeButton.addEventListener('click', () => {
   if (!homeButton.classList.contains('active')) {
     homeIntro.classList.remove('hidden')
@@ -74,6 +80,10 @@ infoButton.addEventListener('click', () => {
     githubIntro.classList.add('hidden')
     githubContent.classList.add('hidden')
   }
+})
+
+quizButton.addEventListener('click', () => {
+    kHomeClick--
 })
 
 githubButton.addEventListener('click', () => {
