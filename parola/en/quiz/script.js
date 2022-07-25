@@ -1,30 +1,30 @@
 const quizData = [
     {
-        question:"What defines a strong password?",
-        a:"a) A password with many characters",
-        b:"b) A password with many types of characters",
-        c:"c) A password without dictionary words",
-        d:"d) All of the above",
+        question:"Ce defineste o parola sigura?",
+        a:"a) O parola cu multe caractere",
+        b:"b) O parola cu multe tipuri de caractere",
+        c:"c) O parola fara cuvinte din dictionar",
+        d:"d) Toate cele de mai sus",
         correct:"d"
     },
     {
-        question:"Why having a strong password is important?",
-        a:"a) To avoid decryption or getting our account compromised",
-        b:"b) For a better SHA256 encryption",
-        c:"c) Because it is hard to remember after seeing it",
-        d:"d) It is not important if I have 2-Factor Authentification",
+        question:"De ce este important sa avem o parola sigura?",
+        a:"a) Pentru a evita decriptarea sau spargerea contului nostru",
+        b:"b) Pentru o incriptie mai buna SHA256",
+        c:"c) Pentru ca este greu de memorat la prima vedere",
+        d:"d) Nu este important daca am 2-Factor Authentification",
         correct:"a"
     },
     {
-        question:"What represents a risk factor for getting your account compromised?",
-        a:"a) Data Breaches",
-        b:"b) Inserting my password on a dangerous website",
-        c:"c) The installation and execution of a keylogger",
-        d:"d) All of the above",
+        question:"Ce reprezinta un factor de risc pentru spargerea contului tau?",
+        a:"a) Bresele de securitate",
+        b:"b) Introducerea parolei pe un website periculos",
+        c:"c) Instalarea si executarea unui virus tip keylogger",
+        d:"d) Toate cele de mai sus",
         correct:"d"
     },
     {
-        question:"Name a set of cryptographic hash functions that websites use.",
+        question:"Numiti un set de functii hash criptografice pe care websiteurile il folosesc",
         a:"a) ENC24",
         b:"b) SHA256",
         c:"c) MB4",
@@ -32,7 +32,7 @@ const quizData = [
         correct:"b"
     },
     {
-        question:"Name another set of cryptographic hash functions that websites use",
+        question:"Mai numiti inca un set de functii hash criptografice pe care websiteurile il folosesc.",
         a:"a) MD5",
         b:"b) ARK64",
         c:"c) HMPAC",
@@ -40,11 +40,11 @@ const quizData = [
         correct:"a"
     },
     {
-        question:"What a significant vulnerability is corrected by HMAC? (Hash-based message authentication code)",
-        a:"a) Infiltrating databases through source code",
-        b:"b) Ease of reading the algorithm and guessing the password through the encrypted hash",
-        c:"c) Checking and concatenating two hash results to find and decrypt the password",
-        d:"d) All of the above",
+        question:"Ce vulnerabilitate importanta este corectata de HMAC? (Hash-based message authentication code)",
+        a:"a) Infiltrarea bazelor de date prin codul sursa",
+        b:"b) Usurinta citirii algoritmului si ghicirea parolei prin hash-ul encriptat.",
+        c:"c) Verificarea si concatenarea a doua rezultate hash pentru aflarea si decriptarea parolei",
+        d:"d) Toate cele de mai sus",
         correct:"c"
     }
 ];
@@ -60,6 +60,7 @@ const submitBtn = document.getElementById('submit');
 const switchDarkMode = document.getElementById('switch')
 const darkmodeText = document.getElementById('darkmodediv')
 const body = document.body;
+let backBtn = document.getElementById('back-button')
 let isdarkmode = false;
 
 let currentQuiz = 0;
@@ -111,32 +112,32 @@ submitBtn.addEventListener('click', () => {
         } else {
             if(isdarkmode) {
                 quiz.innerHTML = `
-                <h2 class="dark-mode-header" id="header">You answered ${score}/${quizData.length} questions correctly!</h2>
+                <h2 class="dark-mode-header" id="header">Ai raspuns corect la ${score}/${quizData.length} intrebari!</h2>
                 `
                 if(score != quizData.length) {
                     quiz.innerHTML += `
-                    <h2 class="dark-mode-header" id="header2">Try again!</h2>
+                    <h2 class="dark-mode-header" id="header2">Incearca iar!</h2>
                     `
                 } else {
                     quiz.innerHTML += `
-                    <h2 class="dark-mode-header" id="header2">Congratulations!</h2>
+                    <h2 class="dark-mode-header" id="header2">Felicitari!</h2>
                     `
                 }
-                quiz.innerHTML += `<button class="dark-button" id="submit" onclick="location.reload()">Reload</button>`
+                quiz.innerHTML += `<button class="dark-button" id="submit" onclick="location.reload()">Reincearca</button>`
             } else if(!isdarkmode){
                 quiz.innerHTML = `
-                <h2 id="header">You answered ${score}/${quizData.length} questions correctly!</h2>
+                <h2 id="header">Ai raspuns corect la ${score}/${quizData.length} intrebari!</h2>
                 `
                 if(score != quizData.length) {
                     quiz.innerHTML += `
-                    <h2 id="header2">Try again!</h2>
+                    <h2 id="header2">Incearca iar!</h2>
                     `
                 } else {
                     quiz.innerHTML += `
-                    <h2 id="header2">Congratulations!</h2>
+                    <h2 id="header2">Felicitari!</h2>
                     `
                 }
-                quiz.innerHTML += `<button id="submit" onclick="location.reload()">Reload</button>`
+                quiz.innerHTML += `<button id="submit" onclick="location.reload()">Reincearca</button>`
             }
         }
     }
@@ -156,6 +157,7 @@ function darkmode() {
     let submitBtnTemp = document.getElementById('submit');
     body.classList.toggle("dark-mode-body");
     quiz.classList.toggle("dark-mode-container");
+    backBtn.classList.toggle("dark-mode-back-button")
     darkmodeText.classList.toggle("dark-mode-header");
     if(submitBtnTemp === null) {
         let submitBtnTempFix = document.getElementById('submit');
@@ -174,3 +176,4 @@ function darkmode() {
         header.classList.toggle("dark-mode-header");
     }
 }
+

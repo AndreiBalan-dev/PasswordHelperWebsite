@@ -1,96 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Breaches</title>
+  <link href="./home.css" rel="stylesheet" />
 </head>
+
 <body class="home-container">
+  <div class="menu">
+    <ul class="horizontal">
+      <h1>PasswordHelper</h1>
+      <li><a class="active" id="home">Acasa</a></li>
+      <li><a id="info">Informatii</a></li>
+      <li><a href='quiz/'>Quiz</a></li>
+      <li class="rightli" style="float:right"><a id="github">Instaleaza PasswordHelper</a></li>
+    </ul>
+  </div>
   <div>
-    <link href="./home.css" rel="stylesheet" />
-    <div class="sectionintro">
-      <h1 class="home-text unselectable"><span>Data Breach</span></h1>
-      <h2 class="home-text5">And why it is important to protect yourself.</h2>
-      <a class="home-text2_button">•</a>
-      <a href='#section1_scroll' class="home-text2">Find out more details</a>
-      <a class="home-text3_button">•</a>
-      <a href="#github" class="home-text3">Find out if my password is good</a>
-      <a class="home-text4_button">•</a>
-      <a href="#github" class="home-text4">Generate me a new password</a>
+    <div class="home-intro">
+      <div class="intro" id="home-intro">
+        <br></br></br>
+        <h1>PasswordHelper</h1>
+        <h2>Este parola ta cu adevarat sigura?</h2>
+      </div>
+      <div class="intro hidden" id="info-intro">
+        <br></br></br>
+        <h1>Bresa de securitate</h1>
+        <h2>Si cum te poti proteja.</h2>
+      </div>
+      <div class="intro hidden" id="github-intro">
+        <br></br></br>
+        <h1>Foloseste PasswordHelper</h1>
+        <h2>Pentru o parola mai sigura!</h2>
+      </div>
+      <div class="line"></div>
     </div>
-</div>
-<div class="section1" id="section1_scroll">
-  <a hidden> scroll fix </a>
-</div>
-<div class="section1" id="section1">
-  <h2 class="home-text6">What defines a safe password?</h2>
-  <div class="hidden" id="hidden_1">
-  <p>- A safe password is a password with many characters, without dictionary words, and which includes all type of characters.</p>
-  <p>- In addition, for your password to be safe, you must be precautious on where you insert it, how do you save it and what the applications you install on your device.</p>
-  <a>- The application "PasswordHelper" will help you choose a safe password, and it will tell you if your current password is good or not.</a>
+    <div class="home" id="home-content">
+      <div class="home-left">
+        <div id="home-click-register" class="test-border home-left-animation">
+          <h2 id="home-guide" class="home-guide-animation">Click!</h2>
+        </div>
+        <div id="home-click-1" class="hidden">
+          <h1>Evolutia Digitala - <span style="color:red">Problema sau solutie?</span></h1>
+          <img id="home-img-1" class="hidden"
+            src="https://images.pexels.com/photos/8721342/pexels-photo-8721342.jpeg?auto=compress&cs=tinysrgb&w=600">
+          <h3>Era digitala, denumita si era informationala, este o idee conform căreia epoca în care trăim in acest moment va fi
+            caracterizată de capacitatea oamenilor de a transmite informație fără restricții, și capacitatea de a avea acces la
+            informație intr-un mod care era imposibil în trecut.</h3>
+        </div>
+        <div id="home-click-2" class="hidden">
+          <h3>Desi accessul la informatie a devenit nelimitat, dezvoltarea tehnologiei in ultimii 20 de ani aduce un
+            risc semnificativ in viata oamenilor, din mai multe puncte de vedere.<br> Doua dintre aceste riscuri sunt
+            <span style="color:red">securitatea si intimitatea online</span>
+          </h3>
+        </div>
+        <div id="home-click-3" class="hidden">
+          <h1>Importanta Tehnologiei</h1>
+          <img id="home-img-2" class="hidden"
+            src="https://glocalthinking.com/wp-content/uploads/2021/08/Screen-Shot-2019-08-22-at-2.44.26-PM.png">
+          <h3>Inca din istoria contemporana, populatia a avut tendinta de a se lasa condusa de evolutia tehnologiei. Majoritatea
+            oamenilor, in prezent, nu isi pot trai viata obisnuita fara gadgeturi si dispozitive smart. De la aparitia calculatorului, la aparitia internetului, comunicarea dispozitivelor prin satelit, prin unde radio, cresterea digitalizatiei este la punctul cel mai din varf, si continua sa creasca intr-un mod incredibil.</h3>
+          <h3>Intr-o lume in care cautam integrarea tehnologiei si inteligentei artificiale in viata de zi cu zi,
+            problemele cresc treptat, iar <span style="color:red">riscurile</span> pot deveni <span
+              style="color:red">semnificative</span>.</h3>
+        </div>
+        <div id="home-click-4" class="hidden">
+          <h3>Pentru a afla mai multe detalii, navigati catre pagina de informatii, sau dati click <span
+              id="home-navToInfoText" class="pointer" style="color:red">AICI</span>.
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="info hidden" id="info-content">
+      <div>
+        <button id="info-container-btn-1" class="pointer">Show</button>
+        <a>&nbsp;&nbsp;Ce inseamna o parola sigura?</a><br><br>
+        <div class="info-container hidden" id="info-container-1">
+          <p>- O parola sigura este o parola <span style="color:red"><b>formata</b></span>, <span style="color:red"><b>pastrata</b></span> si <span style="color:red"><b>protejata</b></span> corespunzator.</p>
+          <p>- O parola <b>formata</b> corespunzator trebuie sa contina <span>multe caractere</span>, <span>cu o varietate mare intre acestea</span>, si esential pentru parolele importante: <span>sa fie greu de memorat</span>, adica evitarea pe cat posibil a cuvintelor din dictionar.</p>
+          <p>- Pentru <b>pastrarea</b> unei parole in siguranta, este necesara evitarea instalarii si executarii a programelor periculoase pe dispozitivul dumneavoastra, dar si evitarea introducerii parolei pe website-uri in care nu aveti incredere.<br><span style="color:red">Atentie: Aveti mereu grija la websiteurile de tip PHISING.</span> </p>
+          <p>- <b>Protejarea</b> unei parole se face la nivel comun, intrucat, cateodata apar <span style="color:red"><b>bresele de securitate</b></span></p>
+          <p>- 2-Factor Authentification este necesar pentru o protectie mult mai buna. Daca aceasta functie nu este exploatata, pentru fiecare incercare de conectare veti primii un sms/email iar atacatorul va avea nevoie de un cod la care doar tu ai acces. Atat timp cat nu ti-ai pierdut telefonul sau contul de email, un cont nu poate fi pierdut pe viata, chiar si daca parola acestuia a fost schimbata.</p>
+          <p>- Programul "PasswordHelper" te va ajuta sa o creezi parola sigura, si iti va spune daca parola ta actuala este sigura sau nu.</p>
+        </div>
+        <button id="info-container-btn-2" class="pointer">Show</button>
+        <a>&nbsp;&nbsp;De ce este important sa avem o parola sigura?</a><br><br>
+        <div class="info-container hidden" id="info-container-2">
+          <p>- Avand o parola slaba, contul tau devine automat mai vulnerabil, iar, in functie de cat de slaba este parola, contul poate fi compromis.</p>
+          <p>- Un factor de risc sunt bresele de securitate. O bresa de securitate se intampla cand cineva reuseste sa intre intr-o baza de date ce include informatii despre tine, precum numele, parola, email, etc.</p>
+          <p>- Chiar daca autentificatorul 2-Factor este important, si pare imposibil de invins, atacatorii au reusit sa treaca peste el de mai multe ori in trecut, si spre surprinderea tuturor, pasii spre exploatarea acestei functii nu au fost deloc avansati.</p>
+          <p>- Pe majoritatea websiteurilor, parolele tale sunt incriptate, mai apoi adaugate intr-o baza de date. Desi ele sunt incriptate, unele parole nu sunt greu de spart daca sunt slabe din punct de vedere al formarii parolei. Hackerii folosesc metoda Brute-Force Hash Decryption ce trece automat printr-o lista de parole sau prin fiecare caracter din ASCII in parte, il incripteaza in setul de functii hash criptografic respectiv, si daca parola ta dintr-o baza de date incriptata (hash) arata exact la fel cu parola pe care el a obtinut-o, atunci ti-a aflat parola si se poate conecta pe contul dumneavoastra.</p>
+        </div>
+        <button id="info-container-btn-3" class="pointer">Show</button>
+        <a>&nbsp;&nbsp;Care sunt metodele de incriptare?</a><br><br>
+        <div class="info-container hidden" id="info-container-3">
+          <p>- Metodele de incriptare populare sunt SHA256 si MD5.</p>
+          <p>- Pentru apararea impotriva verificarii si concatenarii a doua rezultate hash intre parola ta si textul incriptat de hacker, prin metoda "Brute Force" (Brute-Force Hash Decryption), dezvoltatorii folosesc HMAC (Hash-based Message Authentication Code) ce ofera utilizatorului si serverului folosit de utilizator o cheie privata specifica si unica, diferita de alte chei. Aplicatia populara de comunicatii "WhatsApp" foloseste o combinatie intre SHA256 si HMAC, aceasta combinatie se numeste AES-256 si este de nedecriptat.</p>
+        </div>
+        <button id="info-container-btn-4" class="pointer">Show</button>
+        <a>&nbsp;&nbsp;Ce este phishing-ul?</a><br><br>
+        <div class="info-container hidden" id="info-container-4">
+          <p>- Phishingul, vine de la "fishing" in engleza, adica a pescui. Acesta reprezinta o metoda prin care un atacator incearca compromiterea parolei a unei victime.</p>
+          <p>- Atacatorul creeaza un website similar cu alte pagini web pe care ai un cont creat, si cu un domeniu similar acestuia. Websiteul de tip phising este mai apoi redirectionat prin diferite metode catre victime, iar cei ce nu au in vedere linkurile pe care dau click vor fi pacaliti sa isi introduca parola pe aceste website-uri. Odata ce parola a fost introdusa, atacatorul va avea acces la aceasta.</p>
+        </div>
+        <button id="info-container-btn-5" class="pointer">Show</button>
+        <a>&nbsp;&nbsp;Cum sunt incriptate parolele intr-o baza de date?</a><br><br>
+        <div class="info-container hidden" id="info-container-5">
+            <p>- Procesul de incriptare a parolelor este unul complex, ce face ghicirea unui mesaj tip text dupa textul incriptat imposibila. </a>
+            <p>- Mesajul tip text simplu trece prin multi algoritmi matematici si creeaza un text incriptat, necitibil.</p>
+            <p>- In poza de mai jos aveti 2 exemple cu o baza de date. Sus aveti un exemplu cu o baza de date ce nu incripteaza parolele la adaugare, ceea ce este foarte periculos si iti pune parola in pericol. Sub aceasta avem o baza de date in care parola este incriptata in MD5. Se poate observa cum textul simplu "john856" a devenit un text lung, incriptat si necitibil.</p>
+            <img src="encrypt_password.png" alt="Encriptarea parolelor in baza de date">
+            <p> Incearca si tu sa incriptezi un text in MD5 si SHA-256. Scrie ceva in casuta "Mesaj" si o sa primesti un output cu textul incriptat.</p>
+            <ul>
+              <li>
+                <label for="message" class="white">Mesaj</label>
+                <textarea name="message" id="message" class="width-full"></textarea>
+              </li>
+              <li>
+                <label for="digest" class="white">Hash MD5</label>
+                <input type="text" name="digest" id="digest" readonly="" class="width-full"> 
+                <output class="small grey" id="time">average 0.100ms response time</output>
+              </li>
+              <li>
+                <label for="digest-2" class="white">Hash SHA-256</label>
+                <input type="text" name="digest-2" id="digest-2" readonly="" class="width-full"> 
+                <output class="small grey" id="time">average 0.100ms response time</output>
+              </li>
+            </ul>
+        </div>
+        <button id="info-navToQuiz" class="pointer">Take me there</button>
+        <a>&nbsp;&nbsp;Verifica ce ai invatat!</a><br><br>
+        <button id="info-navToGithub" class="pointer">Take me there</button>
+        <a>&nbsp;&nbsp;Instaleaza <span class="passwordhelper pointer" id="info-navToGithubText">PasswordHelper</span>!</a><br><br>
+      </div>
+    </div>
+    <div class="github center hidden" id="github-content">
+      </br></br>
+      <a class="small">Pentru mai multe functionalitati</a></br>
+      <a>Instaleaza aplicatia <b>PasswordHelper</b>:</a></br>
+      <div class="row">
+        <textarea name="message" id="githubText" readonly=""
+          value=1>https://github.com/AndreiBalan-dev/PasswordHelper</textarea>
+        <button id="textbutton">Copy</button>
+      </div>
+    </div>
   </div>
-</div>
-<div class="section2" id="section2">
-  <h2 class="home-text7">Why is it important to use a safe password?</h2>
-  <div class="hidden" id="hidden_2">
-  <p>- By having a weak password, your account will automatically become more vulnerable, and if your password is too weak, it can be compromised.</p>
-  <p>- A risk factor are Data Breaches. Those happen when someone manages to break into a data base full with information about your account, including your password, your email, etc. Having 2-Factor Authentification on trusted websites is required for a much better protection.</p>
-  <p>- Even if 2-Factor Authentification is important and seems impossible to bypass, people have actually bypassed this multiple times in the past, and you will be amazed to know that it was not very hard to bypass. All you had to do is to change your IP to the victim's location and play with the APIs a bit.</p>
-  <p>- Of course, even if the hacker bypassed the 2-Factor Authentification, they still needed the victim's password, which takes us back to why is important to have a strong password.</p>
-  <a>- On the majority of the websites, your password/s are before encrypted, then added to the database. Even if they are encrypted, they're not hard to decrypt if your password is weak. Hackers use the Brute-Force Hash Decryption method which automatically goes through a list of passwords or takes every character from ASCII, encrypts it in the chosen set of cryptographic hash functions, and if your encrypted password matches the password the hacker just encrypted, then he found your password and your account is compromised.</a>
-  <p>- For protection against Hash Brute Forcing decryption, developers use HMAC (Hash-based Message Authentication Code) which gives the user and the server a unique, specific key, different from other keys. The popular communication application WhatsApp uses a combination between SHA256 and HMAC, the combination being called AES-256 and it is uncrackable.</p>  
-</div>
-</div>
-<div class="section3" id="section3">
-  <h2 class="home-text7">How are the passwords encrypted in a database?</h2>
-  <div class="hidden" id="hidden_3">
-  <p>- The process of encryption of passwords is complex, which makes the prediction of a plain text just by having the encrypted hash impossible. </a>
-  <p>- The plain text goes through multiple mathematic algorithms which create an encrypted, unreadable hash.</a>
-  <p>- Looking at the photo below, you have 2 examples of a data base. Above is an example of a data base which does not encrypt your password, which puts your password at great risk if anyone, even the owner of the website, sees your password, especially if you use it on multiple websites. Below, we have a database that encrypts your password in MD5. You can see how the plain text "john856" became a long, unreadable and encrypted hash.</p>
-  <img src="encrypt_password.png" alt="Encriptarea parolelor in baza de date">
-  <p> Try it yourself! Encrypt a message in SHA256. Write something in the "Message" text area, and you will receive an output with the encrypted message.</p>
-  <ul>
-    <li>
-      <label for="message">Message</label>
-      <textarea name="message" id="message" class="width-full"></textarea>
-    </li>
-    <li>
-      <label for="digest">Hash</label>
-      <input type="text" name="digest" id="digest" readonly="" class="width-full"> 
-      <output class="small grey" id="time">average 0.100ms response time</output>
-    </li>
-  </ul>
-  </div>
-
-<div class="section4" id="section4">
-  <div class="quiztext">
-    <span>Take a quiz and verify what you've learned!</span>
-  </div>
-  <a id="quizbutton" href="quiz">Take a quiz</a>
-</div>
-
-
-  
-<div class="github" id="github">
-  <div>
-    <a class="small">For more functionalities</a>
-  </div>
-  <div>
-    <a>Download the application <b>PasswordHelper</b>:</a>
-  </div>
-    <textarea name="message" id="githubText" readonly="" value=1>https://github.com/AndreiBalan-dev/PasswordHelper</textarea>
-    <button id="textbutton">Copy</button>
-</div>
-</div>
-
-
-<button class="button button1" id="section1_press">Less</button>
-<button class="button button2" id="section2_press">Less</button>
-<button class="button button3" id="section3_press">Less</button>
-
-<script type="module" src="jscript.js">
-</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.19.0/js/md5.min.js">
+  </script>
+  <script type="module" src="jscript.js">
+  </script>
 </body>
+
 </html>
-  

@@ -60,6 +60,7 @@ const submitBtn = document.getElementById('submit');
 const switchDarkMode = document.getElementById('switch')
 const darkmodeText = document.getElementById('darkmodediv')
 const body = document.body;
+let backBtn = document.getElementById('back-button')
 let isdarkmode = false;
 
 let currentQuiz = 0;
@@ -156,6 +157,7 @@ function darkmode() {
     let submitBtnTemp = document.getElementById('submit');
     body.classList.toggle("dark-mode-body");
     quiz.classList.toggle("dark-mode-container");
+    backBtn.classList.toggle("dark-mode-back-button")
     darkmodeText.classList.toggle("dark-mode-header");
     if(submitBtnTemp === null) {
         let submitBtnTempFix = document.getElementById('submit');
